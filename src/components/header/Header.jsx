@@ -13,13 +13,13 @@ const Buscador = ({href, icon, name}) => {
     )
 }
 
-export const Header = () => {
+export const Header = ({ theme, setTheme }) => {
     
     // Mostrar menu
     const[toogle, showMenu] = useState(false);
 
     return (
-        <header className='header'>
+        <header className='header' id={ theme }>
             <nav className="nav container">
                 <a href="main.html" className="nav__logo">Andres</a>
                 <div className={toogle ? "show-menu nav__menu" : "nav__menu"}>
@@ -43,6 +43,13 @@ export const Header = () => {
                         <Buscador 
                             href={'contact'} icon={'message'} name={'Contact'} 
                         />
+
+                        {
+                            (theme==="light") 
+                            ? <i className='bx bxs-sun theme__mode' onClick={() => setTheme("dark")} ></i> 
+                            : <i className='bx bxs-moon theme__mode' onClick={() => setTheme("light")} ></i>
+                        }
+                         
                     </ul>
                     <i className="uil uil-times nav__close" onClick={() => showMenu(!toogle)}></i>
                 </div>

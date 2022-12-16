@@ -9,7 +9,7 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
+  /* --title-color: hsl(var(--hue), var(--sat), 20%); */
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
@@ -167,6 +167,18 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+#dark {
+    background-color: #202324;
+    color: #aba499;
+    --darkreader-bg--title-color: #262a2b;
+    --darkreader-text--title-color: #c8c3bc;
+    --darkreader-bg--title-color-dark: #000000;
+    --darkreader-bg--text-color: #585f63;
+    --darkreader-text--text-color: #9e9689;
+    --darkreader-bg--body-color: #1b1d1e;
+    --darkreader-text--container-color: #e8e6e3;
 }
 
 /*=============== BREAKPOINTS ===============*/

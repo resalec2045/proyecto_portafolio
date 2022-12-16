@@ -7,6 +7,10 @@
     background-color: var(--body-color);
 }
 
+.theme__mode {
+    padding-top: 0.17rem;
+}
+
 .nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
@@ -68,6 +72,12 @@
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
+    }
+
+    .theme__mode {
+        display: flex;
+        align-items: center;
+        font-size: var(--small-font-size);
     }
 
     /* Mostrar menu */
