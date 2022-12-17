@@ -7,8 +7,9 @@
     background-color: var(--body-color);
 }
 
-.theme__mode {
-    padding-top: 0.17rem;
+.theme__txt,
+.theme__icon {
+    cursor: pointer;
 }
 
 .nav {
@@ -74,10 +75,22 @@
         transition: .3s;
     }
 
-    .theme__mode {
+    .theme__txt {
         display: flex;
+        flex-direction: column;
         align-items: center;
         font-size: var(--small-font-size);
+        color: var(--tittle-color);
+        font-weight: var(--font-medium);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .theme__icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.1rem;
+        margin-top: 0.2rem;
+        cursor: pointer;
     }
 
     /* Mostrar menu */

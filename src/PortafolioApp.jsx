@@ -7,8 +7,9 @@ import { Home } from "./components/home/Home"
 export const themeContext = createContext(null); 
 
 export const PortafolioApp = () => {
-
-    const [theme, setTheme] = useState("light");
+    
+    const [theme, setTheme] = useState(localStorage.getItem("theme"));
+    
     const toggleTheme = () => {
         setTheme((curr) => (curr == "light" ? "dark" : "light"))
     }

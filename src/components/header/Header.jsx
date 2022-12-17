@@ -18,11 +18,16 @@ export const Header = ({ theme, setTheme }) => {
     // Mostrar menu
     const[toogle, showMenu] = useState(false);
 
+    const saveTheme = (theme) => {
+        localStorage.setItem("theme", theme);
+        setTheme(theme)
+    }
+
     return (
         <header className='header' id={ theme }>
             <nav className="nav container">
                 <a href="main.html" className="nav__logo">Andres</a>
-                <div className={toogle ? "show-menu nav__menu" : "nav__menu"}>
+                <div className={toogle ? "show-menu nav__menu" : "nav__menu"} id={ theme }>
                     <ul className="nav__list "> {/*grid*/}
                         <Buscador 
                             href={'home'} icon={'estate'} name={'Home'} 
@@ -46,8 +51,14 @@ export const Header = ({ theme, setTheme }) => {
 
                         {
                             (theme==="light") 
-                            ? <i className='bx bxs-sun theme__mode' onClick={() => setTheme("dark")} ></i> 
-                            : <i className='bx bxs-moon theme__mode' onClick={() => setTheme("light")} ></i>
+                            ? <div onClick={() => saveTheme("dark")}>
+                                <p className="theme__txt" > 
+                                    <i className='bx bx-sun theme__icon'></i> Light 
+                                </p> 
+                            </div>
+                            : <div className='theme__txt' onClick={() => saveTheme("light")} >
+                                    <i className='bx bx-moon theme__icon'></i> Dark 
+                            </div> 
                         }
                          
                     </ul>
