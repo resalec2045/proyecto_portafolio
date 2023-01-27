@@ -3,6 +3,7 @@ import { createContext, useState } from "react"
 import { About } from "./components/about/About";
 import { Header } from "./components/header/Header"
 import { Home } from "./components/home/Home"
+import { Skill } from "./components/skills/Skill";
 
 
 export const themeContext = createContext(null); 
@@ -24,6 +25,7 @@ export const PortafolioApp = () => {
                     <main className="main">
                         <Home />
                         <About />
+                        <Skill />
                     </main>
                     {/* <footer/> */}
                 </div>

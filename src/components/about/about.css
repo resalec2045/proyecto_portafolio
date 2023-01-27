@@ -5,11 +5,15 @@
 }
 
 .about__image {
-    text-align: center;
+    width: 412px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about__data {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 .about__title {
     font-weight: var(--font-semi-bold);
@@ -35,23 +39,78 @@
 
 .about__interests {
     height: 100px;
+    text-align: center;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 .interests__cards {
-
+    display: inherit;
+    justify-content: space-around;
 }
 .interest__icon {
-    width: 100px;
     margin: 0 10px;
     padding: 10px;
     font-size: var(--big-font-size);
-    text-align: center;
-    border-radius: 10px;
 }
-.interest__icon:hover {
+/* .interest__icon:hover {
     background-color: #6c63ff;
     color: white;
+} */
+
+@media screen and (max-width: 768px) {
+
+    .about__content {
+        grid-template-columns: 1fr;
+    }
+
+    .about__image {
+        width: auto;
+        height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-items: stretch;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .about__image {
+        overflow: hidden;
+        height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+
+.projects__hover{
+    /* Que se posicione en su padre */
+    position: absolute;
+    background: #6c63ff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 70%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Para que no se vean directamente */
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+.projects__item:hover .projects__hover{
+    transform: translateX(0%);
+}
+.projects__item{
+    position: relative;
+    overflow: hidden;
 }

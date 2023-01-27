@@ -130,6 +130,7 @@
     .home__img {
         order: initial;
         justify-self: initial;
+        margin-left: 10%;
     }
     .home__data {
         grid-column: 1/3;

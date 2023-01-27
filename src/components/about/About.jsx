@@ -7,10 +7,11 @@ export const About = () => {
             <section className="about section" id='about'>
                 <h2 className="section__title">Sobre mi</h2>
                 <span className="section__subtitle">Informacion</span>
-                <div className="about_container container grid">
-                    <div className="about_content grid">
+                <div className="about__container container grid">
+                    <div className="about__content grid">
+
                         <div className="about__image">
-                            <svg width="419" height="304" viewBox="0 0 419 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg  viewBox="0 0 419 304" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="graduacion" clip-path="url(#clip0_19_3)">
                                     <path id="Vector" d="M267.008 227.899V301.181H83.5834C62.6847 301.181 45.6812 284.744 45.6812 264.54C45.6812 244.337 62.6846 227.899 83.5834 227.899H267.008Z" fill="#F2F2F2" />
                                     <path id="Vector_2" d="M271.513 300.618C271.513 301.365 271.216 302.082 270.688 302.61C270.16 303.139 269.444 303.436 268.697 303.436H80.3163C70.085 303.436 60.2727 299.368 53.0381 292.127C45.8034 284.885 41.739 275.063 41.739 264.822C41.739 254.581 45.8034 244.76 53.0381 237.518C60.2727 230.277 70.085 226.208 80.3163 226.208H268.697C269.444 226.208 270.16 226.505 270.688 227.034C271.217 227.562 271.513 228.279 271.513 229.027C271.513 229.774 271.217 230.491 270.688 231.02C270.16 231.548 269.444 231.845 268.697 231.845H80.3163C71.5786 231.845 63.1988 235.32 57.0203 241.504C50.8418 247.688 47.3707 256.076 47.3707 264.822C47.3707 273.568 50.8418 281.956 57.0203 288.14C63.1988 294.325 71.5786 297.799 80.3163 297.799H268.697C269.444 297.8 270.16 298.097 270.688 298.625C271.216 299.154 271.513 299.87 271.513 300.618Z" fill="#6C63FF" />
@@ -54,6 +55,7 @@ export const About = () => {
                                 </defs>
                             </svg>
                         </div>
+                        
                         <div className="about__data">
                             <h1 className="about__title">Descripción</h1>
                             <p className="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, expedita placeat! Cumque, temporibus esse omnis aspernatur architecto vitae porro ad corporis non ab modi quisquam necessitatibus expedita ratione! Eius, id?</p>
@@ -65,17 +67,48 @@ export const About = () => {
                                 <p><b>cargo:</b> Developer</p>
                             </div>
                         </div>
+
                         <div className="about__interests">
-                            {/* <h1 className='about__title'>Interests</h1> */}
+                            <h1 className='about__title'>Intereses</h1> 
                             <div className="interests__cards">
-                                <i className='bx bxs-game interest__icon'></i>
-                                <i className='bx bxl-react interest__icon' ></i>
-                                <i className='bx bxl-java interest__icon' ></i>
-                                <i className='bx bx-star interest__icon' ></i>
-                                <i className='bx bxs-id-card interest__icon' ></i>
-                                <i className='bx bxs-guitar-amp interest__icon' ></i>
-                                <i className='bx bxs-coffee-bean interest__icon' ></i>
+                                <article className="projects__item">
+                                    <i className='bx bxs-game interest__icon'></i>
+                                    <div class="projects__hover">
+                                        <h2 class="projects__title">Juegos</h2>
+                                    </div>
+                                </article>
+                                <article className="projects__item">
+                                    <i className='bx bxl-react interest__icon'></i>
+                                    <div class="projects__hover">
+                                        <h2 class="projects__title">React</h2>
+                                    </div>
+                                </article>
+                                <article className="projects__item">
+                                    <i className='bx bxl-java interest__icon'></i>
+                                    <div class="projects__hover">
+                                        <h2 class="projects__title">Java</h2>
+                                    </div>
+                                </article>
+                                <article className="projects__item">
+                                    <i class='bx bx-planet interest__icon'></i>
+                                    <div class="projects__hover">
+                                        <h2 class="projects__title">Astrologia</h2>
+                                    </div>
+                                </article>
+                                <article className="projects__item">
+                                    <i className='bx bxs-guitar-amp interest__icon'></i>
+                                    <div class="projects__hover">
+                                        <h2 class="projects__title">Musica</h2>
+                                    </div>
+                                </article>
+                                <article className="projects__item">
+                                    <i className='bx bxs-coffee-bean interest__icon'></i>
+                                    <div class="projects__hover">
+                                        <h2 class="projects__title">Cafe</h2>
+                                    </div>
+                                </article>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
