@@ -26,7 +26,7 @@ export const Header = ({ theme, setTheme }) => {
     return (
         <header className='header' id={ theme }>
             <nav className="nav container">
-                <a href="main.html" className="nav__logo">Andres</a>
+                <a href="main.html" className="nav__logo">| Andres</a>
                 <div className={toogle ? "show-menu nav__menu" : "nav__menu"} id={ theme }>
                     <ul className="nav__list "> {/*grid*/}
                         <Buscador 

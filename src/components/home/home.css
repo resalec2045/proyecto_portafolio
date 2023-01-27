@@ -1,7 +1,10 @@
 
 .home__content {
+    /* dos filas con una fraccion cada una */
+    /* Separe los 3 divs con dos cosos de una fraccion */
     grid-template-columns: 116px repeat(2, 1fr);    
     padding-top: 5.5rem;
+    /* Espaciado entre elementos */
     column-gap: 2rem;
     align-items: center;
 }
@@ -53,7 +56,7 @@
 
 .home__description {
     max-width: 400px;
-    margin-top: var(--mb-3);
+    margin-top: var(--mb-1);
 }
 
 .home__img{
@@ -70,12 +73,15 @@
 }
 
 @keyframes profile__animate {
+    /* Al principio */
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
+    /* Al medio */
     50% {
         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
+    /* Al final */
     100% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }

@@ -1,0 +1,57 @@
+
+.about_content {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about__image {
+    text-align: center;
+}
+
+.about__data {
+    padding: 1rem;
+}
+.about__title {
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1rem;
+}
+.about__description {
+    margin: 0 0 1rem 1rem;
+}
+
+#Gorrito {
+    animation: gorroAnimated 2s infinite alternate;
+    transform-box: fill-box;
+}
+
+@keyframes gorroAnimated{
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.about__interests {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.interests__cards {
+
+}
+.interest__icon {
+    width: 100px;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: var(--big-font-size);
+    text-align: center;
+    border-radius: 10px;
+}
+.interest__icon:hover {
+    background-color: #6c63ff;
+    color: white;
+}

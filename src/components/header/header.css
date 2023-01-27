@@ -10,6 +10,7 @@
 .theme__txt,
 .theme__icon {
     cursor: pointer;
+    user-select: none;
 }
 
 .nav {
@@ -30,6 +31,9 @@
     display: flex;
     column-gap: 2rem;
 }
+/* .nav__item:hover {
+    color: white;
+} */
 
 .nav__link {
     display: flex;
@@ -39,6 +43,11 @@
     color: var(--tittle-color);
     font-weight: var(--font-medium);
     transition: .3s;
+}
+
+.theme__txt {
+    font-size: var(--small-font-size);
+    color: var(--tittle-color-dark);
 }
 
 .nav__icon,
