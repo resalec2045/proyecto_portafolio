@@ -1,17 +1,16 @@
 
 /* Contenedor */
-.skill__container {
+/* .skill__container {
 
-}
+} */
 /* Grid de separacion entre contenidos */
 .skills__content {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3);
 }
 /* Contenedor */
-.skills__Card {
+/* .skills__Card {
 
-}
+} */
 .skills__tittle {
     text-align: center;
     padding-bottom: 1rem;
@@ -21,7 +20,7 @@
     display: flex;
     justify-content: space-around;
     /* Otro espacio abajo automaticamente */
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 /* carta */
 .skills__data {
@@ -30,8 +29,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
+    margin: .3rem;
+    background-color: #585f631e;
+    border-radius: .5rem;
 }
 .skill__card--icon {
     font-size: var(--big-font-size);
@@ -40,31 +42,28 @@
     color: #6c63ff;
 }
 
-.frontend__info {
-
+.contenedor__info {
+    height: 35rem;
 }
-.backend__info {
+/* .contenedor__info--frontend {
+
+} */
+.contenedor__info--backend {
     margin-top: 2rem;
 }
 .skill__info--card {
-    background-color: #2c30314d;
     width: 100%;
     border-radius: 20px;
     margin-top: 1.5rem;
     padding: 1rem;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    background-color: #585f631e;
 }
 .skill__info--card:hover {
     border: solid 1px;
     border-color: #6c63ff;
-    animation: rotate--card .5s forwards alternate;
-}
-@keyframes rotate--card {
-    0% {
-        transform: rotate(2deg);
-    }
-    100% {
-        transform: rotate(3deg);
-    }
+    transform: rotate(-1deg);
 }
 
 .button__cv {
@@ -72,6 +71,10 @@
     grid-column-start: 1;
     grid-column-end: 3;
     justify-content: center;
+    align-items: center;
+}
+.button__cv a {
+    display: inherit;
     align-items: center;
 }
 
@@ -86,13 +89,16 @@
     .skills__content {
         grid-template-columns: auto;
     }
-    .frontend__info {
+    .contenedor__info--frontend {
         grid-row-start: 2;
         grid-row-end: 3;
     }
     .button__cv {
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+    .contenedor__info--backend {
+        margin-top: 0;
     }
 
 }

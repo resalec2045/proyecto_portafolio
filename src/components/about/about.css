@@ -111,6 +111,10 @@
     .interest__title {
         font-size: var(--smaller-font-size);
     }
+    
+    .interest__icon {
+        margin: 0;
+    }
 
 }
 
