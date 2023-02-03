@@ -1,5 +1,7 @@
 
 import './about.css'
+import { Description } from './Description'
+import { Interests } from './Interests'
 
 export const About = () => {
     return (
@@ -56,60 +58,10 @@ export const About = () => {
                             </svg>
                         </div>
                         
-                        <div className="about__data">
-                            <h1 className="about__title">Descripción</h1>
-                            <p className="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, expedita placeat! Cumque, temporibus esse omnis aspernatur architecto vitae porro ad corporis non ab modi quisquam necessitatibus expedita ratione! Eius, id?</p>
-                            <h1 className='about__title'>Datos personales</h1>
-                            <div className="about__description">
-                                <p><b>Nacimiento:</b> 7 de septiembre 2003</p>
-                                <p><b>edad:</b> 19 años</p>
-                                <p><b>celular:</b> 3000000000</p>
-                                <p><b>cargo:</b> Developer</p>
-                            </div>
-                        </div>
+                        <Description />
 
-                        <div className="about__interests">
-                            <h1 className='about__title'>Intereses</h1> 
-                            <div className="interests__cards">
-                                <article className="projects__item">
-                                    <i className='bx bxs-game interest__icon'></i>
-                                    <div class="projects__hover">
-                                        <h2 class="projects__title">Juegos</h2>
-                                    </div>
-                                </article>
-                                <article className="projects__item">
-                                    <i className='bx bxl-react interest__icon'></i>
-                                    <div class="projects__hover">
-                                        <h2 class="projects__title">React</h2>
-                                    </div>
-                                </article>
-                                <article className="projects__item">
-                                    <i className='bx bxl-java interest__icon'></i>
-                                    <div class="projects__hover">
-                                        <h2 class="projects__title">Java</h2>
-                                    </div>
-                                </article>
-                                <article className="projects__item">
-                                    <i class='bx bx-planet interest__icon'></i>
-                                    <div class="projects__hover">
-                                        <h2 class="projects__title">Astrologia</h2>
-                                    </div>
-                                </article>
-                                <article className="projects__item">
-                                    <i className='bx bxs-guitar-amp interest__icon'></i>
-                                    <div class="projects__hover">
-                                        <h2 class="projects__title">Musica</h2>
-                                    </div>
-                                </article>
-                                <article className="projects__item">
-                                    <i className='bx bxs-coffee-bean interest__icon'></i>
-                                    <div class="projects__hover">
-                                        <h2 class="projects__title">Cafe</h2>
-                                    </div>
-                                </article>
-                            </div>
-                            
-                        </div>
+                        <Interests />
+                        
                     </div>
                 </div>
             </section>
