@@ -1,6 +1,7 @@
 
 import { createContext, useState } from "react"
 import { About } from "./components/about/About";
+import { Contact } from "./components/contact/Contact";
 import { Header } from "./components/header/Header"
 import { Home } from "./components/home/Home"
 import { Projects } from "./components/projects/Projects";
@@ -28,6 +29,7 @@ export const PortafolioApp = () => {
                         <About />
                         <Skill />
                         <Projects />
+                        <Contact />
                     </main>
                     {/* <footer/> */}
                 </div>

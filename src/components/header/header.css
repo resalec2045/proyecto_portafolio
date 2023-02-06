@@ -48,6 +48,7 @@
 .theme__txt {
     font-size: var(--small-font-size);
     color: var(--tittle-color-dark);
+    font-weight: var(--font-medium);
 }
 
 .nav__icon,
