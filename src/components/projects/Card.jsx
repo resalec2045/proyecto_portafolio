@@ -5,6 +5,10 @@ export const Card = ({ img, name, description }) => {
         <div className="project__card animate__animated animate__fadeIn">
             <div className="project__card--box">
                 <img src={img} alt="portafolio" className='card__image' />
+                <div className="information__hover">
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                </div>
             </div>
             <div className="project__card--buttons">
                 <a href="" className='button'>

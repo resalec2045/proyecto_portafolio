@@ -82,11 +82,13 @@
 
 @media screen and (max-width: 768px) {
 
-
+    .button__cv {
+        margin-top: 2rem;
+    }
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
 
     .skills__content {
         grid-template-columns: auto;
@@ -99,8 +101,19 @@
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    .contenedor__info--backend {
-        margin-top: 0;
+    .contenedor__info {
+        height: 38rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .button__cv {
+        margin: 2rem;
+    }
+    .contenedor__info {
+        height: 40rem;
     }
 
 }

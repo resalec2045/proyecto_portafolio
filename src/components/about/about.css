@@ -75,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     /* Para que no se vean directamente */
-    transform: translateX(100%);
+    transform: translateX(110%);
     cursor: pointer;
     transition: transform .3s ease-in-out;
 }
@@ -101,6 +101,17 @@
 
 @media screen and (max-width: 576px) {
 
+    .interest__item {
+        overflow: visible;
+    }
+    .interest__hover {
+        transform: translateY(70%);
+        background: none;
+    }
+    .interest__item:hover .interest__hover{
+        transform: translateY(70%);
+    }
+    
     .about__image {
         overflow: hidden;
         height: 200px;
@@ -117,4 +128,16 @@
     }
 
 }
+
+@media screen and (max-width: 350px) {
+
+    .interests__container {
+        flex-wrap: wrap;
+    }
+    .interest__item {
+        margin-bottom: 1rem;
+    }
+
+}
+
 

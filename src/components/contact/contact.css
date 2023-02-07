@@ -1,0 +1,22 @@
+
+.contact__content {
+    grid-template-columns: 60% 40%;
+}
+.contact__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    animation: hideCard 3s infinite alternate;
+    transform-box: fill-box;
+}
+
+@keyframes hideCard {
+    0% {
+        /* transform: scaleY(-100%); */
+        /* transform-origin: bottom; */
+    }
+}
