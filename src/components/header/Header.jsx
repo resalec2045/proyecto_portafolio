@@ -57,7 +57,7 @@ export const Header = ({ theme, setTheme }) => {
                                 </p> 
                             </div>
                             : <div className='theme__txt' onClick={() => saveTheme("light")} >
-                                    <i className='bx bx-moon theme__icon'></i> Dark 
+                                <i className='bx bx-moon theme__icon'></i> Dark 
                             </div> 
                         }
                          

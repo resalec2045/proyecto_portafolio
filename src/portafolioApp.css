@@ -71,8 +71,10 @@
 }
 
 #dark {
+  /* TODO: Modificar las variables que ya existen para este modo */
   background-color: #202324;
   color: #aba499;
+  --text-color: #9e9689;
   --darkreader-bg--title-color: #262a2b;
   --darkreader-text--title-color: #c8c3bc;
   --darkreader-bg--title-color-dark: #000000;
@@ -123,6 +125,12 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 250px;
+  min-height: 75px;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/

@@ -89,13 +89,14 @@
 
 @media screen and (max-width: 576px) {
 
-    .projects__cards {
-        grid-template-columns: auto;
-    }
     .information__hover {
         transform: translate(0%);
         padding: 1rem;
         width: 100%;
+    }
+    .button {
+        padding: 1rem;
+        margin: 1rem;
     }
 
 }
@@ -110,6 +111,12 @@
     }
     .project__card--box {
         width: auto;
+    }
+    .button-project {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: 0px;
     }
 
 }

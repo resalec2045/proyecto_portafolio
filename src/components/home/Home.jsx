@@ -10,7 +10,7 @@ export const Home = () => {
                     <div className="home__content grid">
                         <Social/>
                         {/* TODO: Animaciones  animate__animated animate__bounce*/}
-                        <div className="home__img animate__fadeIn"></div>
+                        <div className="home__img"></div>
                         <Data/>
                     </div>
                 </div>

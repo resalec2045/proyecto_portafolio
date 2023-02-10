@@ -107,11 +107,8 @@
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 388px) {
 
-    .button__cv {
-        margin: 2rem;
-    }
     .contenedor__info {
         height: 40rem;
     }

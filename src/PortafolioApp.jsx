@@ -31,7 +31,7 @@ export const PortafolioApp = () => {
                         <Projects />
                         <Contact />
                     </main>
-                    {/* <footer/> */}
+                    <footer className=""/>
                 </div>
             </themeContext.Provider>
         </>

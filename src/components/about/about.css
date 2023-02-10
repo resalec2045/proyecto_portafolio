@@ -106,6 +106,7 @@
     }
     .interest__hover {
         transform: translateY(70%);
+        color: unset;
         background: none;
     }
     .interest__item:hover .interest__hover{
