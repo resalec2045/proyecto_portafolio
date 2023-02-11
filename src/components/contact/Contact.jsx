@@ -1,21 +1,22 @@
 
-import { useForm } from '../hooks/useForm'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css'
-
-const loginFormFields = {
-    name: '',
-    email: '',
-    description: ''
-}
 
 export const Contact = () => {
 
-    const { name, email, description, onInputChange } = useForm( loginFormFields )
+    const form = useRef();
 
-    const sendSubmit = ( event ) => {
-        event.preventDefault();
-        console.log(name, email, description)
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_yi1x8fn', 'template_a769u2i', form.current, '4DIRCrpwVVWjPWWmp')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
     return (
         
@@ -26,7 +27,7 @@ export const Contact = () => {
                 <div className="contact__content grid">
 
                     <div className="contact__form-box">
-                        <form onSubmit={ sendSubmit } className="contact__form" >
+                        <form ref={form} onSubmit={ sendEmail } className="contact__form" >
                             <div className="contact__form-div">
                                 <h3>Nombre</h3>
                                 <input 
@@ -34,8 +35,6 @@ export const Contact = () => {
                                     type="text" 
                                     placeholder='Ingrese su nombre'
                                     name='name'
-                                    value={ name }
-                                    onChange={ onInputChange }
                                 />
                             </div>
                             <div className="contact__form-div">
@@ -45,8 +44,6 @@ export const Contact = () => {
                                     type="text" 
                                     placeholder='Ingrese su email'
                                     name='email'
-                                    value={ email }
-                                    onChange={ onInputChange }
                                 />
                             </div>
                             <div className="contact__form-div">
@@ -58,13 +55,11 @@ export const Contact = () => {
                                     type="text" 
                                     placeholder='Ingrese la descripción'
                                     name='description'
-                                    value={ description }
-                                    onChange={ onInputChange }
                                 />
                             </div>
                         </form>
 
-                        <button className='button button-contact' onClick={ sendSubmit }>Enviar</button>
+                        <button value="Send" className='button button-contact' onClick={ sendEmail }>Enviar</button>
                     </div>
 
                     <div className="contact__card">
@@ -127,7 +122,7 @@ export const Contact = () => {
                             <p>3006453071</p>
                             <a href="https://wa.me/573006453071"  target="_blank" className='social__icon--arrow'>
                                 Contactame 
-                                <i className='bx bx-right-arrow-alt ' ></i>
+                                <i className='bx bx-right-arrow-alt' ></i>
                             </a>
                         </div>
                     </div>

@@ -12,7 +12,7 @@
 }
 .contact__form-input {
     width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid #333333;
     background: none;
     color: var(--text-color);
     outline: none;
@@ -38,8 +38,8 @@
 
 @keyframes hideCard {
     0% {
-        /* transform: scaleY(-100%); */
-        /* transform-origin: bottom; */
+        /* transform: scaleY(-100%);
+        transform-origin: bottom; */
     }
 }
 
