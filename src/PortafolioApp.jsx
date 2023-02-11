@@ -2,11 +2,11 @@
 import { createContext, useState } from "react"
 import { About } from "./components/about/About";
 import { Contact } from "./components/contact/Contact";
+import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header"
 import { Home } from "./components/home/Home"
 import { Projects } from "./components/projects/Projects";
 import { Skill } from "./components/skills/Skill";
-
 
 export const themeContext = createContext(null); 
 
@@ -31,7 +31,7 @@ export const PortafolioApp = () => {
                         <Projects />
                         <Contact />
                     </main>
-                    <footer className=""/>
+                    <Footer/>
                 </div>
             </themeContext.Provider>
         </>
