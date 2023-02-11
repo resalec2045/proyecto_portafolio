@@ -37,10 +37,12 @@
 }
 
 @keyframes hideCard {
-    0% {
-        /* transform: scaleY(-100%);
-        transform-origin: bottom; */
+    /* 0% {
+        
     }
+    100% {
+
+    } */
 }
 
 .contact__social {

@@ -76,6 +76,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: var(--tittle-color)
 }
 .footer__gratitude {
     grid-area: gratitude;
@@ -102,6 +103,12 @@
         "data      data"
         "redes     redes"
         "gratitude gratitude";
+    }
+    .footer__data-div {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
 }

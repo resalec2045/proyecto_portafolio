@@ -14,19 +14,25 @@ export const Footer = () => {
                     <img src={homeImage} alt="" />
                 </div>
                 <div className="footer__data">
-                    <div className="">
+                    <div className="footer__data-div">
                         <h1>Andres</h1>
                         <p>Desarrollador frontend</p>
                     </div>
                 </div>
                 <div className="footer__redes">
-                    <i className="uil uil-instagram footer__icons"></i>
-                    <i className="uil uil-facebook footer__icons"></i>   
-                    <i className="uil uil-github-alt footer__icons"></i>   
+                    <a href="https://www.instagram.com/r_andresfelipe/" className="footer__icons" target="_blank" >
+                        <i className="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/andresfelipe.rios.77770/" className="footer__icons" target="_blank" >
+                        <i className="uil uil-facebook"></i>   
+                    </a>
+                    <a href="https://github.com/resalec2045" className="footer__icons" target="_blank" >
+                        <i className="uil uil-github-alt"></i> 
+                    </a>  
                 </div>
                 <div className="footer__gratitude">
                     <p>Hecho con el <i className='bx bxs-heart'></i> en:</p>
-                    <p>RHtml, Css, React y Javascript</p>
+                    <p>Html, Css, React y Javascript</p>
                 </div>
             </div>
         </section>
