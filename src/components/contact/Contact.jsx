@@ -112,7 +112,7 @@ export const Contact = () => {
                             </svg>
                             <h3>Email</h3>
                             <p className='correo'>andresf.rios2045@gmail.com</p>
-                            <a href="mailto:andresf.rios2045@gmail.com" className='social__icon--arrow'>
+                            <a href="mailto:andresf.rios2045@gmail.com"  target="_blank" className='social__icon--arrow'>
                                 Contactame <i className='bx bx-right-arrow-alt ' ></i>
                             </a>
                         </div>
@@ -125,7 +125,7 @@ export const Contact = () => {
                             </svg>
                             <h3>Whatsapp</h3>
                             <p>3006453071</p>
-                            <a href="https://wa.me/3006453071" className='social__icon--arrow'>
+                            <a href="https://wa.me/573006453071"  target="_blank" className='social__icon--arrow'>
                                 Contactame 
                                 <i className='bx bx-right-arrow-alt ' ></i>
                             </a>

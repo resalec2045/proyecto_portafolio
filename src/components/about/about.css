@@ -105,12 +105,15 @@
         overflow: visible;
     }
     .interest__hover {
-        transform: translateY(70%);
+        transform: translateY(270%);
         color: unset;
         background: none;
+        cursor: default;
+        height: auto;
+        text-align: center;
     }
     .interest__item:hover .interest__hover{
-        transform: translateY(70%);
+        transform: translateY(280%);
     }
     
     .about__image {

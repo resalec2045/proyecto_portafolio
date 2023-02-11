@@ -83,7 +83,7 @@
 @media screen and (max-width: 768px) {
 
     .button__cv {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
 }
@@ -102,7 +102,7 @@
         grid-column-end: 2;
     }
     .contenedor__info {
-        height: 38rem;
+        height: 35rem;
     }
 
 }
