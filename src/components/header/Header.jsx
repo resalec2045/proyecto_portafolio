@@ -1,26 +1,43 @@
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './header.css'
 
-const Buscador = ({href, icon, name}) => {
-    return (
-        <li className="nav__item">
-            <a href={"#" + href} className="nav__link active-link">
-                <i className={"uil uil-"+icon+" nav__icon"}></i>{name}
-            </a>
-        </li>
-    )
-}
 
 export const Header = ({ theme, setTheme }) => {
     
     // Mostrar menu
     const[toogle, showMenu] = useState(false);
-
+    const [toogleSection, setToogleSection] = useState(localStorage.getItem("section"))
+    
+    useEffect(() => {
+        if ( toogleSection !== null ) {
+            goSection( toogleSection )
+        }
+        setToogleSection('home')
+    }, [])
+    
     const saveTheme = (theme) => {
         localStorage.setItem("theme", theme);
         setTheme(theme)
+    }
+    const saveSection = (id) => {
+        localStorage.setItem("section", id);
+        setToogleSection(id)
+    }
+    const Buscador = ({href, icon, name}) => {
+        return (
+            <li className="nav__item">
+                <a onClick={ () => saveSection(href) } href={ "#" + href } className="nav__link active-link">
+                    <i className={ "uil uil-"+icon+" nav__icon" }></i>{ name }
+                </a>
+            </li>
+        )
+    }
+    const goSection = (id) => {
+        $('html, body').animate({
+            scrollTop: $(`#${id}`).offset().top
+        }, 1000);
     }
 
     return (
@@ -29,6 +46,7 @@ export const Header = ({ theme, setTheme }) => {
                 <a href="main.html" className="nav__logo">| Andres</a>
                 <div className={toogle ? "show-menu nav__menu" : "nav__menu"} id={ theme }>
                     <ul className="nav__list "> {/*grid*/}
+                    
                         <Buscador 
                             href={'home'} icon={'estate'} name={'Home'} 
                         />

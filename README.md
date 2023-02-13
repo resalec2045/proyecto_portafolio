@@ -1,8 +1,6 @@
 
 - Andres del futuro si quiere agregar otra tarjeta de formacion hay que cambiar el tamaño del div padre
 
-- mejorar la animación de los iconos en habilidades
-- las cartas en contactar se pueda hacer click completo
+- las cartas en contactar se pueda hacer click completo (Puede ser)
 
-- Que los cosos de contactame se limpien cuando se envie algo
-- que salga un mensaje en pantalla diciendo que se mando correctamente el mensaje
+- Que el link tenga el valor del section en el que esta

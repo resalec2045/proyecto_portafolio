@@ -50,7 +50,7 @@ export const Contact = () => {
         
         <section className="Contact section" id="contact">
             <h2 className="section__title">Contactame</h2>
-            <span className="section__subtitle">po favoh :c</span>
+            <span className="section__subtitle">:D</span>
             <div className="contact__container container grid">
                 <div className="contact__content grid">
 

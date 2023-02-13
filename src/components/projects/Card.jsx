@@ -1,11 +1,11 @@
 
 export const Card = ({ img, name, description }) => {
+    
     return (
-
         <div className="project__card animate__animated animate__fadeIn">
             <div className="project__card--box">
-                <img src={img} alt="portafolio" className='card__image' />
-                <div className="information__hover">
+                <img src={img} alt="portafolio" className={localStorage.getItem("theme") === 'light' ? "card__image--ligth card__image " : " card__image "} />
+                <div className= "information__hover">
                     <h3>{name}</h3>
                     <p>{description}</p>
                 </div>
@@ -25,6 +25,5 @@ export const Card = ({ img, name, description }) => {
                 </a>
             </div>
         </div>
-
     )
 }

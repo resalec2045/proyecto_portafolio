@@ -59,6 +59,12 @@
 .project__card--box:hover .information__hover{
     transform: translateX(0%);
 }
+.project__card--box:hover .card__image{
+    opacity: 0.5;
+}
+.project__card--box:hover .card__image--ligth {
+    opacity: 1;
+}
 .card__image {
     display: inline-block;
     width: 90%;
@@ -88,7 +94,13 @@
 }
 
 @media screen and (max-width: 576px) {
-
+    
+    .card__image {
+        opacity: 0.5;
+    }
+    .card__image {
+        opacity: 1;
+    }
     .information__hover {
         transform: translate(0%);
         padding: 1rem;
