@@ -2,8 +2,12 @@
 import './about.css'
 import { Description } from './Description'
 import { Interests } from './Interests'
+import { Observer } from '../observer/Observer'
 
 export const About = () => {
+
+    Observer("about")
+
     return (
         <>
             <section className="about section" id='about'>

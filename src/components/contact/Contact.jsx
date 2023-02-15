@@ -5,6 +5,7 @@ import { useForm } from '../hooks/useForm';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import './contact.css'
+import { Observer } from '../observer/Observer';
 
 const loginFormFields = {
     name: '',
@@ -18,6 +19,7 @@ export const Contact = () => {
     const { name, email, description, onInputChange, onResetForm } = useForm( loginFormFields )
     const [menssageSend, setMenssageSend] = useState(false)
 
+    
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -45,10 +47,12 @@ export const Contact = () => {
             })
         }
     };
-
+    
+    Observer("contact")
+    
     return (
         
-        <section className="Contact section" id="contact">
+        <section className="contact section" id="contact">
             <h2 className="section__title">Contactame</h2>
             <span className="section__subtitle">:D</span>
             <div className="contact__container container grid">

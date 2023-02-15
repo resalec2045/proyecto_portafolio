@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { AllProjecs } from './types/AllProjecs'
 import { MobileProjects } from './types/MobileProjects'
 import { WebProjects } from './types/WebProjects'
+import { Observer } from '../observer/Observer'
 
 export const Projects = () => {
 
@@ -14,9 +15,11 @@ export const Projects = () => {
         setProjectsType("all")
 	}, [])
 
+    Observer("projects")
+
     return (
         <>
-            <section className="projects section" id="portfolio">
+            <section className="projects section" id="projects">
                 <h2 className="section__title">Portafolio</h2>
                 <span className="section__subtitle">Proyectos</span>
                 <div className="projects__container container grid">

@@ -11,7 +11,7 @@ export const useObserver = () => {
         console.log(observedEntries)
         setEntries(observedEntries)
 
-    }, options ) )
+    }, [] ) )
 
     useEffect(function() {
         const currentObserver = observer.current;

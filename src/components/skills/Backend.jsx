@@ -9,43 +9,36 @@ export const Backend = () => {
                     <div className="skills__data">
                         <i className='bx bxl-react skill__card--icon'></i>
                         <div className="">
-                            <h3 className="skill__name">React</h3>
-                            <span className='skill__level'>basic</span>
+                            <h3 className="skill__name">Java</h3>
+                            <span className='skill__level'>basico</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className='bx bxl-react skill__card--icon'></i>
                         <div className="">
-                            <h3 className="skill__name">React</h3>
-                            <span className='skill__level'>basic</span>
+                            <h3 className="skill__name">Node js</h3>
+                            <span className='skill__level'>basico</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className='bx bxl-react skill__card--icon'></i>
                         <div className="">
-                            <h3 className="skill__name">React</h3>
-                            <span className='skill__level'>basic</span>
+                            <h3 className="skill__name">PHP</h3>
+                            <span className='skill__level'>basico</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className='bx bxl-react skill__card--icon'></i>
                         <div className="">
-                            <h3 className="skill__name">React</h3>
-                            <span className='skill__level'>basic</span>
+                            <h3 className="skill__name">Git</h3>
+                            <span className='skill__level'>basico</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className='bx bxl-react skill__card--icon'></i>
                         <div className="">
-                            <h3 className="skill__name">React</h3>
-                            <span className='skill__level'>basic</span>
-                        </div>
-                    </div>
-                    <div className="skills__data">
-                        <i className='bx bxl-react skill__card--icon'></i>
-                        <div className="">
-                            <h3 className="skill__name">React</h3>
-                            <span className='skill__level'>basic</span>
+                            <h3 className="skill__name">Github</h3>
+                            <span className='skill__level'>basico</span>
                         </div>
                     </div>
 

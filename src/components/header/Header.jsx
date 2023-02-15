@@ -60,7 +60,7 @@ export const Header = ({ theme, setTheme }) => {
                         />
 
                         <Buscador 
-                            href={'portfolio'} icon={'scenery'} name={'Portafolio'} 
+                            href={'projects'} icon={'scenery'} name={'Portafolio'} 
                         />
 
                         <Buscador 

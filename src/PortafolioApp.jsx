@@ -19,25 +19,6 @@ export const PortafolioApp = () => {
         setTheme((curr) => (curr == "light" ? "dark" : "light"))
     }
 
-    // // Selecciona la sección que deseas observar
-    // var section = document.getElementById("home");
-
-    // // Crea un nuevo objeto IntersectionObserver
-    // var observer = new IntersectionObserver(function(entries) {
-    // entries.forEach(function(entry) {
-    //     if (entry.isIntersecting) {
-    //     // La sección está en el viewport, cambia su estado
-    //     section.classList.add("in-view");
-    //     } else {
-    //     // La sección no está en el viewport, restaura su estado anterior
-    //     section.classList.remove("in-view");
-    //     }
-    // });
-    // });
-
-    // // Comienza a observar la sección
-    // observer.observe(section);
-
     return (
         <>
             <themeContext.Provider value={{ theme, toggleTheme }}>

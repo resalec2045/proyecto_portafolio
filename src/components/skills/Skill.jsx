@@ -2,8 +2,12 @@
 import { Backend, Frontend } from './'
 import './skill.css'
 import cv from '../../assets/CV.pdf'
+import { Observer } from '../observer/Observer'
 
 export const Skill = () => {
+
+    Observer("skill")
+
     return (
         <>
             <section className="skill section" id="skill">
