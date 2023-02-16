@@ -1,12 +1,16 @@
 import { Card } from "../Card"
-import portafolio from '../../../assets/project-portafolio.png'
+import AnimalPaws from '../../../assets/AnimalPaws.png'
 
 export const MobileProjects = () => {
     return (
         <>
-            <Card img={portafolio} name="Portafolio" description="Html, Css, React y Javascript" />
-            <Card img={portafolio} name="Portafolio" description="Html, Css, React y Javascript" />
-            <Card img={portafolio} name="Portafolio" description="Html, Css, React y Javascript" />
+            <Card 
+                img={ AnimalPaws } 
+                name="AnimalPaws" 
+                description="Flutter" 
+                codeLink="https://github.com/resalec2045" 
+                demoLink="" 
+            />
         </>
     )
 }

@@ -3,4 +3,4 @@
 
 - las cartas en contactar se pueda hacer click completo (Puede ser)
 
-- Que el link tenga el valor del section en el que esta
+- llenar info

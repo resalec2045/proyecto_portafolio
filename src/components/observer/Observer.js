@@ -4,7 +4,7 @@ import { useObserver } from '../hooks/useObserver'
 
 export const Observer = ( sectionName ) => {
     const [observer, setElements, entries] = useObserver({
-        threshold: 0.99,
+        threshold: 0.40,
         root: null
     })
 
@@ -22,7 +22,7 @@ export const Observer = ( sectionName ) => {
                 const section = entry.target;
                 section.src = section.dataset.src;
                 section.classList.remove(`${sectionName}`);
-                console.log("Guardado automatico")
+                // console.log("Guardado automatico")
                 localStorage.setItem("section", `${sectionName}`);
             }
         })

@@ -3,6 +3,7 @@ import { Backend, Frontend } from './'
 import './skill.css'
 import cv from '../../assets/CV.pdf'
 import { Observer } from '../observer/Observer'
+import { CardInformation } from './CardInformation'
 
 export const Skill = () => {
 
@@ -20,45 +21,74 @@ export const Skill = () => {
                             <Backend />
 
                             <div className="contenedor__info contenedor__info--frontend">
-                                <div className="skill__info--card">
-                                    <h3 className="card__name">Ingeniería de Sistemas</h3>
-                                    <span className="card__place">Universidad del Quindio</span>
-                                    <p className="card__date">2020 - hasta la fecha</p>
-                                    <p className="card__Description">- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre</p>
-                                </div>
-                                <div className="skill__info--card">
-                                    <h3 className="card__name">Ingeniería de Sistemas</h3>
-                                    <span className="card__place">Universidad del Quindio</span>
-                                    <p className="card__date">2020 - hasta la fecha</p>
-                                    <p className="card__Description">- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre</p>
-                                </div>
-                                <div className="skill__info--card">
-                                    <h3 className="card__name">Ingeniería de Sistemas</h3>
-                                    <span className="card__place">Universidad del Quindio</span>
-                                    <p className="card__date">2020 - hasta la fecha</p>
-                                    <p className="card__Description">- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre</p>
-                                </div>
+                                
+                                <CardInformation { 
+                                    ...{
+                                        name: "Ingeniería de Sistemas", 
+                                        place: "Universidad del Quindio", 
+                                        date: "2020 - hasta la fecha", 
+                                        description: "- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre"
+                                    } 
+                                } />
+
+                                <CardInformation { 
+                                    ...{
+                                        name: "Diseño web moderno en html5 y css3", 
+                                        place: "Udemy", 
+                                        date: "2023", 
+                                        description: "- Aprendizaje de HTML 5 y CSS 3 para creación de web moderno"
+                                    } 
+                                }/>
+
+                                <CardInformation { 
+                                    ...{
+                                        name: "React: De cero a experto [Hooks y MERN]", 
+                                        place: "Udemy", 
+                                        date: "2022 - 2023", 
+                                        description: "- Aprendizaje de React para creación de paginas web "
+                                    } 
+                                }/>
+
+                                <CardInformation { 
+                                    ...{
+                                        name: "Flutter: Tu guía completa de desarrollo", 
+                                        place: "Udemy", 
+                                        date: "2022", 
+                                        description: "- Aprendizaje de Flutter para creación de apps en IOS y Android "
+                                    } 
+                                }/>
+
                             </div>
 
                             <div className="contenedor__info contenedor__info--backend">
-                                <div className="skill__info--card">
-                                    <h3 className="card__name">Ingeniería de Sistemas</h3>
-                                    <span className="card__place">Universidad del Quindio</span>
-                                    <p className="card__date">2020 - hasta la fecha</p>
-                                    <p className="card__Description">- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre</p>
-                                </div>
-                                <div className="skill__info--card">
-                                    <h3 className="card__name">Ingeniería de Sistemas</h3>
-                                    <span className="card__place">Universidad del Quindio</span>
-                                    <p className="card__date">2020 - hasta la fecha</p>
-                                    <p className="card__Description">- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre</p>
-                                </div>
-                                <div className="skill__info--card">
-                                    <h3 className="card__name">Ingeniería de Sistemas</h3>
-                                    <span className="card__place">Universidad del Quindio</span>
-                                    <p className="card__date">2020 - hasta la fecha</p>
-                                    <p className="card__Description">- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre</p>
-                                </div>
+
+                                <CardInformation { 
+                                    ...{
+                                        name: "Java", 
+                                        place: "Universidad del Quindio", 
+                                        date: "2021 - hasta la fecha", 
+                                        description: "- Sintáxis de java, POO, Estructuras de datos, etc.. "
+                                    } 
+                                }/>
+
+                                <CardInformation { 
+                                    ...{
+                                        name: "Tecnico en programacion de software", 
+                                        place: "Sena", 
+                                        date: "2020", 
+                                        description: "- Creación de páginas web con bases de datos. php y mysql "
+                                    } 
+                                }/>
+
+                                <CardInformation { 
+                                    ...{
+                                        name: "Git + Github", 
+                                        place: "Udemy", 
+                                        date: "2022", 
+                                        description: "- Sistema de control de versiones"
+                                    } 
+                                }/>
+
                             </div>
                             
                             <div className="button__cv">
