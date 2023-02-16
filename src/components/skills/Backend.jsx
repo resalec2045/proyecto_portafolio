@@ -28,9 +28,9 @@ export const Backend = () => {
                         </div>
                     </div>
                     <div className="skills__data">
-                        <i className='bx bxl-postgresql skill__card--icon'></i>
+                        <i className='bx bxl-mongodb skill__card--icon'></i>
                         <div className="">
-                            <h3 className="skill__name">MySql</h3>
+                            <h3 className="skill__name">MongoDB</h3>
                             <span className='skill__level'>Basico</span>
                         </div>
                     </div>
