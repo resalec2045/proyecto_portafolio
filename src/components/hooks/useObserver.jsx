@@ -8,7 +8,6 @@ export const useObserver = () => {
 
     const observer = useRef( new IntersectionObserver(function(observedEntries) {
     
-        console.log(observedEntries)
         setEntries(observedEntries)
 
     }, [] ) )
