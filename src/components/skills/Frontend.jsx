@@ -10,14 +10,14 @@ export const Frontend = () => {
                         <i className = 'bx bxl-html5 skill__card--icon'></i>
                         <div className = "">
                             <h3 className = "skill__name">Html</h3>
-                            <span className = 'skill__level'>Basico</span>
+                            <span className = 'skill__level'>Intermedio</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className='bx bxl-css3 skill__card--icon'></i>
                         <div className="">
                             <h3 className="skill__name">Css</h3>
-                            <span className='skill__level'>Basico</span>
+                            <span className='skill__level'>Intermedio</span>
                         </div>
                     </div>
                     <div className="skills__data">

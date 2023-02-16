@@ -8,7 +8,7 @@ export const MobileProjects = () => {
                 img={ AnimalPaws } 
                 name="AnimalPaws" 
                 description="Flutter" 
-                codeLink="https://github.com/resalec2045" 
+                codeLink="https://github.com/AnimalPaws/ap-mobile-app" 
                 demoLink="" 
             />
         </>
