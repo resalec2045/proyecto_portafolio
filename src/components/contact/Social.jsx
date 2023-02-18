@@ -15,7 +15,7 @@ export const Social = () => {
                 <h3>Email</h3>
                 <p className='correo'>andresf.rios2045@gmail.com</p>
                 <a href="mailto:andresf.rios2045@gmail.com"  target="_blank" className='social__icon--arrow'>
-                    Contactame <i className='bx bx-right-arrow-alt ' ></i>
+                    Contáctame <i className='bx bx-right-arrow-alt ' ></i>
                 </a>
             </div>
             <div className="contact__social-box">
@@ -28,7 +28,7 @@ export const Social = () => {
                 <h3>Whatsapp</h3>
                 <p>3006453071</p>
                 <a href="https://wa.me/573006453071"  target="_blank" className='social__icon--arrow'>
-                    Contactame 
+                    Contáctame 
                     <i className='bx bx-right-arrow-alt' ></i>
                 </a>
             </div>

@@ -29,19 +29,19 @@ export const Interests = () => {
                     <article className="interest__item">
                         <i className='bx bx-planet interest__icon'></i>
                         <div className="interest__hover">
-                            <h2 className="interest__title">Astrologia</h2>
+                            <h2 className="interest__title">Astrología</h2>
                         </div>
                     </article>
                     <article className="interest__item">
                         <i className='bx bxs-guitar-amp interest__icon'></i>
                         <div className="interest__hover">
-                            <h2 className="interest__title">Musica</h2>
+                            <h2 className="interest__title">Música</h2>
                         </div>
                     </article>
                     <article className="interest__item">
                         <i className='bx bxs-coffee-bean interest__icon'></i>
                         <div className="interest__hover">
-                            <h2 className="interest__title">Cafe</h2>
+                            <h2 className="interest__title">Café</h2>
                         </div>
                     </article>
                 </div>

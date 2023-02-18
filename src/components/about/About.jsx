@@ -12,7 +12,7 @@ export const About = () => {
         <>
             <section className="about section" id='about'>
                 <h2 className="section__title">Sobre mi</h2>
-                <span className="section__subtitle">Informacion</span>
+                <span className="section__subtitle">Información</span>
                 <div className="about__container container grid">
                     <div className="about__content grid">
 

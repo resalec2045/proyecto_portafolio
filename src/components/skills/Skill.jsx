@@ -25,7 +25,7 @@ export const Skill = () => {
                                 <CardInformation { 
                                     ...{
                                         name: "Ingeniería de Sistemas", 
-                                        place: "Universidad del Quindio", 
+                                        place: "Universidad del Quindío", 
                                         date: "2020 - hasta la fecha", 
                                         description: "- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre"
                                     } 
