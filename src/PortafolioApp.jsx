@@ -10,7 +10,6 @@ import { ScrollUp } from "./components/scrollup/ScrollUp";
 import { Skill } from "./components/skills/Skill";
 
 export const themeContext = createContext(null); 
-
 export const PortafolioApp = () => {
     
     const [theme, setTheme] = useState(localStorage.getItem("theme"));
