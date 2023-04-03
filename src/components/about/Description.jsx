@@ -17,7 +17,6 @@ export const Description = () => {
                 <div className="about__description">
                     <p><b>Nacimiento:</b> 7 de septiembre 2003</p>
                     <p><b>Edad:</b> 19 años</p>
-                    <p><b>Celular:</b> 3006453071</p>
                     <p><b>Cargo:</b> Developer</p>
                 </div>
             </div>
