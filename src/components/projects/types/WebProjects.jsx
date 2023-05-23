@@ -1,6 +1,7 @@
 import { Card } from "../Card"
 import portafolio from '../../../assets/project-portafolio.png'
 import ecommerce from '../../../assets/EcoClothes.png'
+import calendar from '../../../assets/Calendar.png'
 
 export const WebProjects = () => {
     return (
@@ -17,6 +18,13 @@ export const WebProjects = () => {
                 name="EcoClothes" 
                 description="Html, Css, React, Typescript y Nodejs" 
                 codeLink="https://github.com/EcommerceClothes"
+                demoLink=""
+            />
+            <Card 
+                img={calendar} 
+                name="Calendar" 
+                description="Html, Css, React, Javascript y Nodejs" 
+                codeLink="https://github.com/resalec2045/calendar-FrontEnd"
                 demoLink=""
             />
         </>
