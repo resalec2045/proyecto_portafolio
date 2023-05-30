@@ -13,6 +13,9 @@ export const Social = () => {
             <a href="https://github.com/resalec2045" className="home__social-icon" target="_blank" >
                 <i className="uil uil-github-alt"></i>   
             </a>
+            <a href="https://www.linkedin.com/in/andres-felipe-rios-alzate/" className="home__social-icon" target="_blank" >
+                <i class='bx bxl-linkedin-square'></i>
+            </a> 
         </div>
     )
 }

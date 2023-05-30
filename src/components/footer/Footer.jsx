@@ -25,6 +25,9 @@ export const Footer = () => {
                     <a href="https://github.com/resalec2045" className="footer__icons" target="_blank" >
                         <i className="uil uil-github-alt"></i> 
                     </a>  
+                    <a href="https://www.linkedin.com/in/andres-felipe-rios-alzate/" className="footer__icons" target="_blank" >
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a> 
                 </div>
                 <div className="footer__gratitude">
                     <p>Hecho con el <i className='bx bxs-heart'></i> en:</p>
