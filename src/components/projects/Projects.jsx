@@ -3,9 +3,9 @@ import './projects.css'
 import { useState } from "react"
 import { useEffect } from 'react'
 import { AllProjecs } from './types/AllProjecs'
-import { MobileProjects } from './types/MobileProjects'
-import { WebProjects } from './types/WebProjects'
 import { Observer } from '../observer/Observer'
+import { BackendProjects } from './types/BackendProjects'
+import { FrontendProjects } from './types/FrontendProjects'
 
 export const Projects = () => {
 
@@ -26,15 +26,15 @@ export const Projects = () => {
                     <div className="projects__content grid">
                         <div className="projects__links">
                             <a className={ projectsType==="all" ? "project__link button" : "project__link"} onClick={ () => setProjectsType("all")} >All</a>
-                            <a className={ projectsType==="web" ? "project__link button" : "project__link"} onClick={ () => setProjectsType("web")} >Web</a>
-                            <a className={ projectsType==="mobile" ? "project__link button" : "project__link"} onClick={ () => setProjectsType("mobile")} >Mobile</a>
+                            <a className={ projectsType==="frontend" ? "project__link button" : "project__link"} onClick={ () => setProjectsType("frontend")} >Frontend</a>
+                            <a className={ projectsType==="backend" ? "project__link button" : "project__link"} onClick={ () => setProjectsType("backend")} >Backend</a>
                         </div>
                         {
                             projectsType === "all" 
                             ? <div className="projects__cards grid"> <AllProjecs /> </div> 
-                            : projectsType === "web" 
-                            ? <div className="projects__cards grid"> <WebProjects /> </div>
-                            : <div className="projects__cards grid"> <MobileProjects /> </div>
+                            : projectsType === "frontend" 
+                            ? <div className="projects__cards grid"> <FrontendProjects /> </div>
+                            : <div className="projects__cards grid"> <BackendProjects /> </div>
                         }
                     </div>
                 </div>

@@ -1,11 +1,11 @@
-import { WebProjects } from "./WebProjects"
-import { MobileProjects } from "./MobileProjects"
+import { BackendProjects } from "./BackendProjects"
+import { FrontendProjects } from "./FrontendProjects"
 
 export const AllProjecs = () => {
     return (
         <>
-            <WebProjects />
-            <MobileProjects />
+            <BackendProjects />
+            <FrontendProjects />
         </>
     )
 }
