@@ -27,7 +27,7 @@ export const Skill = () => {
                                         name: "Ingeniería de Sistemas", 
                                         place: "Universidad del Quindío", 
                                         date: "2020 - hasta la fecha", 
-                                        description: "- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 5to semestre"
+                                        description: "- Estudiante de Ingeniería de Sistemas en la Universidad del Quindio, 7mo semestre."
                                     } 
                                 } />
 
@@ -49,15 +49,6 @@ export const Skill = () => {
                                     } 
                                 }/>
 
-                                <CardInformation { 
-                                    ...{
-                                        name: "Flutter: Tu guía completa de desarrollo", 
-                                        place: "Udemy", 
-                                        date: "2022", 
-                                        description: "- Aprendizaje de Flutter para creación de apps en IOS y Android "
-                                    } 
-                                }/>
-
                             </div>
 
                             <div className="contenedor__info contenedor__info--backend">
@@ -76,7 +67,7 @@ export const Skill = () => {
                                         name: "Tecnico en programacion de software", 
                                         place: "Sena", 
                                         date: "2020", 
-                                        description: "- Creación de páginas web con bases de datos. php y mysql "
+                                        description: "- Creación de páginas web con bases de datos (php y mysql)"
                                     } 
                                 }/>
 

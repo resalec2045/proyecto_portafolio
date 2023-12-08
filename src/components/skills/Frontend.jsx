@@ -24,7 +24,7 @@ export const Frontend = () => {
                         <i className='bx bxl-javascript skill__card--icon'></i>
                         <div className="">
                             <h3 className="skill__name">Javascript</h3>
-                            <span className='skill__level'>Básico</span>
+                            <span className='skill__level'>Intermedio</span>
                         </div>
                     </div>
                     <div className="skills__data">
@@ -32,13 +32,6 @@ export const Frontend = () => {
                         <div className="">
                             <h3 className="skill__name">React</h3>
                             <span className='skill__level'>Intermedio</span>
-                        </div>
-                    </div>
-                    <div className="skills__data">
-                        <i className='bx bxl-flutter skill__card--icon'></i>
-                        <div className="">
-                            <h3 className="skill__name">Flutter</h3>
-                            <span className='skill__level'>Básico</span>
                         </div>
                     </div>
 
