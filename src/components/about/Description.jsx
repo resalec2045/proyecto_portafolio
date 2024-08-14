@@ -6,7 +6,7 @@ export const Description = () => {
       <div className="about__data">
         <h3 className="about__title">Descripción</h3>
         <p className="about__description">
-          Mi nombre es <b>Andres Rios</b>, tengo 20 años de edad, soy un
+          Mi nombre es <b>Andres Rios</b>, tengo 21 años de edad, soy un
           estudiante apasionado de Ingeniería de Sistemas y Desarrollador Web
           FrontEnd. Me gustaría tener la oportunidad de unirme a una empresa que
           me permita aplicar mis habilidades y conocimientos en un entorno en el
